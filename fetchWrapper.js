@@ -4,11 +4,18 @@ class FetchWrapper {
   }
 
   get(endpoint) {
-    return fetch(this.baseUrl + endpoint, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    }).then((response) => response.json());
+    return fetch(this.baseUrl + endpoint)
+      .then((response) => response.json());
   }
+  
+  put(endpoint, body) {
+    return fetch(this._send
+  }
+                 
+                 
+  _send(method, endpoint, body) {
+      return fetch(this.baseUrl + endpoint, {
+               
+      }
+   }
 }
