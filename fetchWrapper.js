@@ -9,7 +9,7 @@ class FetchWrapper {
   }
   
   put(endpoint, body) {
-    return fetch(this._send
+    return fetch(this._send, "put", body);
   }
                  
                  
